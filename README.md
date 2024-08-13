@@ -15,3 +15,11 @@ After installing go to browser's settings ---extension ---select react-dev-tools
 [React Sandbox](https://codesandbox.io/p/sandbox/react-new?utm_source=dotnew)
 
 --react.new in the url--
+
+
+# VS Code extension
+
+[ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+# Node
+[Node Setup](https://nodejs.org/en/download/prebuilt-installer)
