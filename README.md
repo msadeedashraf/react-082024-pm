@@ -42,9 +42,12 @@ Run this command to create a React application named my-react-app:
 
 # Error Running npx create-react-app
 
-*  - .
 
 ![npx create-react-app](Assets/npm-missing-folder-error.PNG)
 
-The **MonkeyFinder** project also has blank code files and XAML pages that we will use during the workshop. All of the code that we modify will be in this project for the workshop.
+# Error Running npx start
+![npx create-react-app](Assets/npm-start-pag1-error.PNG.PNG)
+
+![npx create-react-app](Assets/npm-start-pag2-error.PNG.PNG)
+
 
