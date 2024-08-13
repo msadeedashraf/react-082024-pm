@@ -24,6 +24,11 @@ After installing go to browser's settings ---extension ---select react-dev-tools
 # Node
 [Node Setup](https://nodejs.org/en/download/prebuilt-installer)
 
+To Check the installation run
+>node -v
+>npm -v
+
+
 # Create React App
 
 To learn and test React, you should set up a React Environment on your computer.
@@ -34,4 +39,12 @@ Open your terminal in the directory you would like to create your application.
 Run this command to create a React application named my-react-app:
 
 >npx create-react-app my-react-app
+
+# Error Running npx create-react-app
+
+*  - .
+
+![npx create-react-app](Assets/npm-missing-folder-error.PNG)
+
+The **MonkeyFinder** project also has blank code files and XAML pages that we will use during the workshop. All of the code that we modify will be in this project for the workshop.
 
