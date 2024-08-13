@@ -42,8 +42,8 @@ Run this command to create a React application named my-react-app:
 
 # Error Running npx create-react-app
 
-
 ![npx create-react-app](Assets/npm-missing-folder-error.PNG)
+
 
 # Error Running npx start
 ![npx create-react-app](Assets/npm-start-pag1-error.PNG.PNG)
