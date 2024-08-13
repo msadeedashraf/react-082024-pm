@@ -46,8 +46,12 @@ Run this command to create a React application named my-react-app:
 
 
 # Error Running npx start
-![npx create-react-app](Assets/npm-start-pag1-error.PNG.PNG)
+ 
+![npx start](Assets/npm-start-pag1-error.PNG.PNG)
 
-![npx create-react-app](Assets/npm-start-pag2-error.PNG.PNG)
+### To set/edit the environment variables
+![npx start fix](Assets/npm-start-pag2-error.PNG.PNG)
+
+
 
 
