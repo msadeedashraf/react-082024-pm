@@ -25,7 +25,9 @@ After installing go to browser's settings ---extension ---select react-dev-tools
 [Node Setup](https://nodejs.org/en/download/prebuilt-installer)
 
 To Check the installation run
+
 >node -v
+
 >npm -v
 
 
@@ -39,8 +41,11 @@ Open your terminal in the directory you would like to create your application.
 Run this command to create a React application named my-react-app:
 
 ### Option 1
+
 >npx create-react-app app_name
+
 >cd app_name
+
 >npm start
 
 ### Option 2
