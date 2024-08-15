@@ -49,15 +49,18 @@ Run this command to create a React application named my-react-app:
 >npm start
 
 ### Option 2
-*Create a project folder 
+Create a project folder 
 
 > npx create-react-app .
 
 > npm start  
 
 ### Option 3
-*Create a project folder and bring the files in that folder 
+Create a project folder and bring the files in that folder 
+
 ![Files and Folder to copy in the project folder](Assets/option-3.png)
+
+> cd your_path [drag and drop the folder in VS Code terminal]
 
 > npx install
 
