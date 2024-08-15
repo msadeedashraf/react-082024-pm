@@ -55,6 +55,13 @@ Run this command to create a React application named my-react-app:
 
 > npm start  
 
+### Option 3
+*Create a project folder and bring the files in that folder 
+![Files and Folder to copy in the project folder](Assets/option-3.png)
+
+> npx install
+
+> npm start  
 
 # Error Running npx create-react-app
 

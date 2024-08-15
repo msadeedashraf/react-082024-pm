@@ -7,6 +7,7 @@ const Main = () => {
         <section id="hero">
           <section id="hero-section">
             <h2>Welcome to JobZila</h2>
+
             <p class="vission-statement">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               odit id aliquid enim dolorem excepturi commodi porro! Amet eos,
