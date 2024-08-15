@@ -62,7 +62,7 @@ Create a project folder and bring the files in that folder
 
 > cd your_path [drag and drop the folder in VS Code terminal]
 
-> npx install
+> npm install
 
 > npm start  
 
