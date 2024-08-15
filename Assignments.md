@@ -6,3 +6,6 @@ https://www.youtube.com/watch?v=wIyHSOugGGw&t=315s
 
 Difference between Framework and a Library
 What is SPA (Single Page Application)
+
+Assignment 1:
+Convert the Booking(TripZila) or any previously completed project's Index page into react page using Components. 

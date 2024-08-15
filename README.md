@@ -38,10 +38,16 @@ The create-react-app tool is an officially supported way to create React applica
 Open your terminal in the directory you would like to create your application.
 Run this command to create a React application named my-react-app:
 
+### Option 1
 >npx create-react-app app_name
 >cd app_name
 >npm start
- 
+
+### Option 2
+*Create a project folder 
+
+> npx create-react-app .
+> npm start  
 
 
 # Error Running npx create-react-app
