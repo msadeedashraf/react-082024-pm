@@ -52,6 +52,7 @@ Run this command to create a React application named my-react-app:
 *Create a project folder 
 
 > npx create-react-app .
+
 > npm start  
 
 
