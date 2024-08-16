@@ -66,6 +66,30 @@ Create a project folder and bring the files in that folder
 
 > npm start  
 
+### Option 4
+Connecting the code from the Git Repo
+
+Create a folder in the local machine (class-code)
+
+Open the folder with VS Code 
+
+Pickup the Terminal
+
+git clone repo_url 
+
+![Git Url](Assets/git-clone-url.png)
+
+> git clone https://github.com/msadeedashraf/react-082024-pm.git
+
+To get the updates/New Files
+
+> git fetch
+
+> git pull
+
+
+
+
 # Error Running npx create-react-app
 
 ![npx create-react-app](Assets/npm-missing-folder-error.PNG)
