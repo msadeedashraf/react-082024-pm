@@ -104,4 +104,26 @@ To get the updates/New Files
 
 
 
+# To create a Component 
+create a .js file and type rafce
+
+### How to use Routes
+
+[Using Routes](https://www.freecodecamp.org/news/how-to-use-react-router-version-6/
+)
+
+<Routes>
+
+<Route path="/" element={  } />
+<Route path="about" element={ } />
+<Route path="contact" element={} />
+
+</Routes>
+
+# To Install the React Router
+On the terminal type 
+
+>npm install react-router-dom
+
+
 
