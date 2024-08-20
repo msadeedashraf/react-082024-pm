@@ -9,3 +9,5 @@ What is SPA (Single Page Application)
 
 Assignment 1:
 Convert the Booking(TripZila) or any previously completed project's Index page into react page using Components. 
+Assignment 2:
+Convert the Booking(TripZila) into a react based SPA using router. 
