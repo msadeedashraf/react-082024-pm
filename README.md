@@ -113,11 +113,9 @@ create a .js file and type rafce
 )
 
 <Routes>
-
 <Route path="/" element={  } />
 <Route path="about" element={ } />
 <Route path="contact" element={} />
-
 </Routes>
 
 # To Install the React Router
