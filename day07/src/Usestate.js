@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
-const useState = () => {
+const Usestate = () => {
+  const [brand, setBrand] = useState("Honda");
+  const [model, setModel] = useState("Civic");
+  const [year, setYear] = useState("2025");
+  const [color, setColor] = useState("White");
+
+  const [car, setCar] = useState({
+    brand: "Toyota",
+    model: "Rav",
+    year: 2024,
+    color: "black",
+  });
+
+  //Spread Operator
+
+  console.log(car);
+
   return (
     <>
-      <h1>UseState example</h1>
+      <h1>My {car.brand}</h1>
+      <p>
+        Its a {car.color} {car.model} and the year {car.year}
+      </p>
+      <br />
+      <hr></hr>
+      <h1>My {brand}</h1>
+      <p>
+        Its a {color} {model} and the year {year}
+      </p>
     </>
   );
 };
 
-export default useState;
+export default Usestate;
