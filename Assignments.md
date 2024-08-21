@@ -12,9 +12,17 @@ Convert the Booking(TripZila) or any previously completed project's Index page i
 Assignment 2:
 Convert the Booking(TripZila) into a react based SPA using router. 
 
-Reading Assignments:
-Spread Operator
+### Reading Assignments:
+
+## Spread Operator
 [Link1](https://www.freecodecamp.org/news/javascript-spread-and-rest-operators/)
 [Link2](https://www.w3schools.com/react/react_es6_spread.asp)
 [Link3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+## Arrow Functions
+[Link1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+)
+[Link2](https://www.w3schools.com/js/js_arrow_function.asp)
+[Link1](https://www.freecodecamp.org/news/javascript-arrow-functions-in-depth/)
+
 
