@@ -14,7 +14,12 @@ What is SPA (Single Page Application)
 ### First
 Convert the Booking(TripZila) or any previously completed project's Index page into react page using Components. 
 ### Second
-Convert the Booking(TripZila) into a react based SPA using router. 
+Convert the Booking(TripZila) into a react based SPA using router.
+### Third
+Bring the list of monkeys in the <Main/> component using the map function
+
+The json can be picked up using the following [monkey json](https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
+
 
 ## Reading Assignments:
 
