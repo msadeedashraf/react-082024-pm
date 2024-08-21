@@ -123,5 +123,9 @@ On the terminal type
 
 >npm install react-router-dom
 
+## React Icons
+![React-Icons](https://www.npmjs.com/package/react-icons)
+
+>npm install react-icons --save
 
 

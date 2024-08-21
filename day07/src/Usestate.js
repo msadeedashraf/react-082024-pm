@@ -13,6 +13,17 @@ const Usestate = () => {
     color: "black",
   });
 
+  const [count, setCount] = useState(10);
+
+  const handleClick = () => {
+    setCount(count + 1);
+    console.log(count);
+  };
+
+  const handleClick2 = () => {
+    console.log(count);
+  };
+
   //Spread Operator
 
   console.log(car);
@@ -29,6 +40,11 @@ const Usestate = () => {
       <p>
         Its a {color} {model} and the year {year}
       </p>
+      <br />
+      <hr></hr>
+
+      <button onClick={handleClick}>Click</button>
+      <button onClick={handleClick2}>Click</button>
     </>
   );
 };
