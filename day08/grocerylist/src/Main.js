@@ -5,7 +5,7 @@ const Main = () => {
   const [items, setItems] = useState([
     {
       id: 1,
-      checked: false,
+      checked: true,
       item: "Bread",
     },
     {
@@ -22,15 +22,45 @@ const Main = () => {
 
   //map
   //Array.map( () => ()  )
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+
+    //console.log(id);
+    setItems(listItems);
+    localStorage.setItem("shopinglist", JSON.stringify(listItems));
+  };
+
+  const handleDelete = (id) => {
+    //console.log(id);
+    const listItems = items.filter((i) => i.id !== id);
+
+    setItems(listItems);
+    localStorage.setItem("shopinglist", JSON.stringify(listItems));
+  };
 
   return (
     <main>
       <ul>
         {items.map((i) => (
           <li className="item">
-            <input type="checkbox" checked={i.checked} />
-            <label>{i.item}</label>
-            <FaTrashAlt role="button" tabIndex="0" />
+            <input
+              type="checkbox"
+              onChange={() => handleCheck(i.id)}
+              checked={i.checked}
+            />
+            <label
+              onDoubleClick={() => handleCheck(i.id)}
+              style={i.checked ? { textDecoration: "line-through" } : null}
+            >
+              {i.item}
+            </label>
+            <FaTrashAlt
+              onClick={() => handleDelete(i.id)}
+              role="button"
+              tabIndex="0"
+            />
           </li>
         ))}
       </ul>
