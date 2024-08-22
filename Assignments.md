@@ -34,4 +34,7 @@ The json can be picked up using the following [monkey json](https://raw.githubus
 [Link2](https://www.w3schools.com/js/js_arrow_function.asp)
 [Link1](https://www.freecodecamp.org/news/javascript-arrow-functions-in-depth/)
 
-
+###  Conditional (ternary) operator   
+[Link1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+[Link2](https://www.w3schools.com/react/react_es6_ternary.asp)
+[Link1](https://www.freecodecamp.org/news/the-ternary-operator-in-javascript/)
