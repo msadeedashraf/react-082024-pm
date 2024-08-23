@@ -39,3 +39,8 @@ The json can be picked up using the following [monkey json](https://raw.githubus
 [Link1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 [Link2](https://www.w3schools.com/react/react_es6_ternary.asp)
 [Link1](https://www.freecodecamp.org/news/the-ternary-operator-in-javascript/)
+
+### Destructuring assignment
+[Link1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+[Link1](https://www.w3schools.com/react/react_es6_destructuring.asp)
+[Link1](https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/)
