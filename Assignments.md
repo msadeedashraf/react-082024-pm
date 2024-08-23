@@ -19,7 +19,8 @@ Convert the Booking(TripZila) into a react based SPA using router.
 Bring the list of monkeys in the <Main/> component using the map function
 
 The json can be picked up using the following [monkey json](https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
-
+#### Output: 
+![Monkey App]()
 
 ## Reading Assignments:
 
