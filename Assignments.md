@@ -1,3 +1,6 @@
+### Getting Started with the GIT
+[Link](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
+
 History of React by its creators
 https://www.youtube.com/watch?v=8pDqJVdNa44&t=5s
 
@@ -45,5 +48,3 @@ The json can be picked up using the following [monkey json](https://raw.githubus
 [Link1](https://www.w3schools.com/react/react_es6_destructuring.asp)
 [Link1](https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/)
 
-### Getting Started with the GIT
-[Link](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
