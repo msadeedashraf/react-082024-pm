@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Main from "./Main";
 import { useState } from "react";
 import AddItem from "./AddItem";
+import SearchItem from "./SearchItem";
 
 function App() {
   /*
@@ -31,6 +32,8 @@ function App() {
   );
 
   const [newItem, setNewItem] = useState("");
+
+  const [search, setSearch] = useState("");
 
   const handleSubmission = (e) => {
     //console.log("Insert");
@@ -86,13 +89,16 @@ function App() {
   return (
     <div className="App">
       <Header title="Groceries List" />
+      <SearchItem search={search} setSearch={setSearch} />
       <AddItem
         newItem={newItem}
         setNewItem={setNewItem}
         handleSubmission={handleSubmission}
       />
       <Main
-        items={items}
+        items={items.filter((i) =>
+          i.item.toLowerCase().includes(search.toLowerCase())
+        )}
         setItems={setItems}
         handleCheck={handleCheck}
         handleDelete={handleDelete}

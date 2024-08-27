@@ -1,0 +1,1 @@
+We worked on completing our grocery list in the day 10 folder.

@@ -31,7 +31,9 @@ Add a monkey the way we added the the new item in the groceries list.
 or
 You can use jobzila to add job in the list of jobs.
 
-
+### Fifth
+Create a color picker where you can type the color name and above label/textbox gets filled with that color. 
+![Color Selector](Assets/challange.png)
 
 ## Reading Assignments:
 
