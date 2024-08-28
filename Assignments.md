@@ -1,12 +1,13 @@
 ### Getting Started with the GIT
 [Link](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
 
-History of React by its creators
-https://www.youtube.com/watch?v=8pDqJVdNa44&t=5s
+[History of React by its creators](https://www.youtube.com/watch?v=8pDqJVdNa44&t=5s)
 
-Every React Concept Explained in 12 Minutes
-https://www.youtube.com/watch?v=wIyHSOugGGw&t=315s
+[Every React Concept Explained in 12 Minutes](https://www.youtube.com/watch?v=wIyHSOugGGw&t=315s)
 
+[Every React 19 Feature Explained in 8 Minutes](https://www.youtube.com/watch?v=2NPIYnY3ilo)
+
+[ALL React Hooks Explained in 12 Minutes](https://www.youtube.com/watch?v=LOH1l-MP_9k)
 
 Difference between Framework and a Library
 What is SPA (Single Page Application)
