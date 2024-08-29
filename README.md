@@ -87,8 +87,17 @@ To get the updates/New Files
 
 > git pull
 
+### Install npm JSON-SERVER
+https://www.npmjs.com/
+search json-server
 
+npm i json-server
 
+create a .json file (e.g: monkey.json )
+
+npx json-server -p 3500 -w .\data\monkey.json
+
+http://localhost:3500/items
 
 # Error Running npx create-react-app
 

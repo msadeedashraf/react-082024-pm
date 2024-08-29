@@ -59,3 +59,5 @@ Create a color picker where you can type the color name and above label/textbox 
 [Link1](https://www.w3schools.com/react/react_es6_destructuring.asp)
 [Link1](https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/)
 
+### CRUD operation 
+[CRUD](https://www.freecodecamp.org/news/crud-operations-explained/)
