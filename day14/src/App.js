@@ -27,17 +27,52 @@ function App() {
   ]);
 */
 
-  const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem("shopinglist")) || []
-  );
+  const API_URL = "http://localhost:3500/items";
+  //const API_URL =    "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json";
+
+  const [items, setItems] = useState([]);
+  const [newItem, setNewItem] = useState("");
+  const [search, setSearch] = useState("");
+  const [fetchError, setFetchError] = useState(null);
+
+  //useEffect(  () => {} , [] );
+  /*
+  useEffect(  () => {
+
+const fetchItems = async () => {
+
+  try 
+  {
+    //code goes here
+  }
+  catch (err)
+  {
+    //if error in the try block 
+    //code goes in here
+  }
+}
+
+  } , [] );
+*/
 
   useEffect(() => {
-    localStorage.setItem("shopinglist", JSON.stringify(items));
-  }, [items]);
+    const fetchItems = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw Error("Did not recieve the expected data");
+        const listItems = await response.json();
+        console.log(listItems);
 
-  const [newItem, setNewItem] = useState("");
+        setItems(listItems);
+        setFetchError(null);
+      } catch (err) {
+        setFetchError(err.message);
+        console.log(err.stack);
+      }
+    };
 
-  const [search, setSearch] = useState("");
+    (async () => await fetchItems())();
+  }, []);
 
   const handleSubmission = (e) => {
     //console.log("Insert");
