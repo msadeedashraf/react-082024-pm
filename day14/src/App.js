@@ -7,33 +7,13 @@ import AddItem from "./AddItem";
 import SearchItem from "./SearchItem";
 
 function App() {
-  /*
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: true,
-      item: "Bread",
-    },
-    {
-      id: 2,
-      checked: false,
-      item: "Milk",
-    },
-    {
-      id: 3,
-      checked: true,
-      item: "Eggs",
-    },
-  ]);
-*/
-
   const API_URL = "http://localhost:3500/items";
-  //const API_URL =    "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json";
 
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   //useEffect(  () => {} , [] );
   /*
@@ -68,10 +48,16 @@ const fetchItems = async () => {
       } catch (err) {
         setFetchError(err.message);
         console.log(err.stack);
+      } finally {
+        setIsLoading(false);
       }
     };
 
-    (async () => await fetchItems())();
+    setTimeout(() => {
+      (async () => await fetchItems())();
+    }, 2000);
+
+    //setTimeout(() => {}, 2000);
   }, []);
 
   const handleSubmission = (e) => {
@@ -126,14 +112,28 @@ const fetchItems = async () => {
         setNewItem={setNewItem}
         handleSubmission={handleSubmission}
       />
-      <Main
-        items={items.filter((i) =>
-          i.item.toLowerCase().includes(search.toLowerCase())
+
+      <main>
+        {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
+
+        {isLoading && (
+          <p style={{ color: "blue" }}>
+            {"Items are getting loaded please wait"}
+          </p>
         )}
-        setItems={setItems}
-        handleCheck={handleCheck}
-        handleDelete={handleDelete}
-      />
+
+        {!fetchError && !isLoading && (
+          <Main
+            items={items.filter((i) =>
+              i.item.toLowerCase().includes(search.toLowerCase())
+            )}
+            setItems={setItems}
+            handleCheck={handleCheck}
+            handleDelete={handleDelete}
+          />
+        )}
+      </main>
+
       <Footer length={items.length} />
     </div>
   );
