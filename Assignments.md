@@ -36,6 +36,10 @@ You can use jobzila to add job in the list of jobs.
 Create a color picker where you can type the color name and above label/textbox gets filled with that color. 
 ![Color Selector](Assets/challange.png)
 
+### Sixth
+Pickup a simple project in react like a to do list or portfolio from youtube.
+
+
 ## Reading Assignments:
 
 ### Spread Operator
