@@ -12,6 +12,20 @@
 Difference between Framework and a Library
 What is SPA (Single Page Application)
 
+[Setup the sms notifications](https://www.twilio.com/code-exchange/sms-notifications)
+
+[API](https://medium.com/@jjensi632/what-is-api-ef265bb40b8c)
+
+[API](https://www.ibm.com/topics/api)
+
+
+[API Types and use cases](https://konghq.com/blog/learning-center/different-api-types-and-use-cases)
+### Here is a high-level overview of several types of API methods:
+
+###### GET method: retrieves information or data from a specified resource
+###### POST method: submits data to be processed to a specified resource
+###### PUT method: updates a specified resource with new data
+###### DELETE method: deletes a specified resource
 
 ## Assignment 
 
