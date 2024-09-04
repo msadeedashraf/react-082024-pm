@@ -5,6 +5,7 @@ import Main from "./Main";
 import { useState, useEffect } from "react";
 import AddItem from "./AddItem";
 import SearchItem from "./SearchItem";
+import apiRequest from "./apiRequest";
 
 function App() {
   const API_URL = "http://localhost:3500/items";
@@ -14,26 +15,6 @@ function App() {
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-
-  //useEffect(  () => {} , [] );
-  /*
-  useEffect(  () => {
-
-const fetchItems = async () => {
-
-  try 
-  {
-    //code goes here
-  }
-  catch (err)
-  {
-    //if error in the try block 
-    //code goes in here
-  }
-}
-
-  } , [] );
-*/
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -81,6 +62,17 @@ const fetchItems = async () => {
     const listItems = [...items, myNewItem]; // copies the exiting items and merge the new item in the array
     //console.log(listItems);
     setItems(listItems);
+
+    const postOptions = {
+      method: "POST",
+      header: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(myNewItem),
+    };
+
+    const result = apiRequest(API_URL, postOptions);
+    if (result) setFetchError(result);
   };
 
   const handleCheck = (id) => {

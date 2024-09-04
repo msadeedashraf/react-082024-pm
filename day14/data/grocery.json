@@ -29,6 +29,16 @@
       "id": 6,
       "checked": false,
       "item": "oranges"
+    },
+    {
+      "id": 7,
+      "checked": false,
+      "item": "banana"
+    },
+    {
+      "id": 8,
+      "checked": false,
+      "item": "mangoes"
     }
   ]
 }
