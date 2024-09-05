@@ -41,22 +41,20 @@ function App() {
     //setTimeout(() => {}, 2000);
   }, []);
 
-  const handleSubmission = (e) => {
-    //console.log("Insert");
-    e.preventDefault();
-    //console.log(newItem);
-    if (!newItem) return; // if new item is coming from the input
-
-    addItem(newItem); //if new item is added then call additem method
-    setNewItem(""); //after add the item empty the input field
-  };
-
   //addItem function recieves one newItem every time
-  const addItem = (item) => {
+  const addItem = async (item) => {
     //it checks the existing value of the id and add one to the last id value
     //in case there is no item in the list then sets it to 1
-    const id = items.length ? items[items.length - 1].id + 1 : 1;
+    const id = items.length
+      ? (parseInt(items[items.length - 1].id) + 1).toString()
+      : "1";
+
     //console.log(id);
+
+    /*const newId = (id) => {
+      id.toString();
+    };
+*/
 
     const myNewItem = { id, checked: false, item }; //set the object with the three items id, checked and item value
     const listItems = [...items, myNewItem]; // copies the exiting items and merge the new item in the array
@@ -71,11 +69,12 @@ function App() {
       body: JSON.stringify(myNewItem),
     };
 
-    const result = apiRequest(API_URL, postOptions);
+    console.log(postOptions);
+    const result = await apiRequest(API_URL, postOptions);
     if (result) setFetchError(result);
   };
 
-  const handleCheck = (id) => {
+  const handleCheck = async (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
@@ -84,15 +83,52 @@ function App() {
     //setItems(listItems);
     //localStorage.setItem("shopinglist", JSON.stringify(listItems));
     setItems(listItems);
+
+    const myItem = listItems.filter((item) => item.id === id);
+    console.log(myItem);
+
+    const updateOptions = {
+      method: "PATCH",
+      header: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ checked: myItem[0].checked }),
+    };
+
+    const reqUrl = `${API_URL}/${id}`;
+    //  console.log(reqUrl);
+    // console.log(updateOptions);
+
+    const result = await apiRequest(reqUrl, updateOptions);
+    if (result) setFetchError(result);
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = async (id) => {
     //console.log(id);
     const listItems = items.filter((i) => i.id !== id);
 
     //setItems(listItems);
     //localStorage.setItem("shopinglist", JSON.stringify(listItems));
     setItems(listItems);
+
+    const deleteOptions = {
+      method: "DELETE",
+    };
+
+    const reqUrl = `${API_URL}/${id}`;
+
+    const result = await apiRequest(reqUrl, deleteOptions);
+    if (result) setFetchError(result);
+  };
+
+  const handleSubmission = (e) => {
+    //console.log("Insert");
+    e.preventDefault();
+    //console.log(newItem);
+    if (!newItem) return; // if new item is coming from the input
+
+    addItem(newItem); //if new item is added then call additem method
+    setNewItem(""); //after add the item empty the input field
   };
 
   return (
