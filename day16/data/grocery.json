@@ -2,13 +2,23 @@
   "items": [
     {
       "id": "3",
-      "checked": true,
+      "checked": false,
       "item": "milk"
     },
     {
       "id": "5",
       "checked": true,
       "item": "eggs"
+    },
+    {
+      "id": "6",
+      "checked": true,
+      "item": "mangoes"
+    },
+    {
+      "id": "7",
+      "checked": false,
+      "item": "banana"
     }
   ]
 }
